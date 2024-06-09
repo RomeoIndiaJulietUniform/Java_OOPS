@@ -1,6 +1,4 @@
-package constructor;
-
-import java.security.PublicKey;
+package genericlist;
 
 public class User {
 
@@ -8,14 +6,23 @@ public class User {
     private String membership;
 
 
-   public User(String name,String membership){
-       this.name = name;
-       this.membership = membership;
-   }
+    public User(String name,String membership){
+        this.name = name;
+        this.membership = membership;
+    }
 
-  /* public User(){
+    public User(){
 
-   }*/  //allows for using the User without parameters
+    }  // allows for using the User without parameters
+
+    public boolean equals(User u2){
+        if(get_name() == u2.get_name() && get_membership() == u2.get_membership() ){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
 
     void set_name(String name){
         this.name = name;
@@ -41,4 +48,5 @@ public class User {
     String get_membership(){
         return membership;
     }
+
 }

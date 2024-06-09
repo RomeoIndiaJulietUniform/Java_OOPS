@@ -13,7 +13,7 @@ public class User {
 
    public User(){
 
-   }  //function allows for using the User without parameters
+   }  // allows for using the User without parameters
 
     public boolean equals(User u2){
         if(get_name() == u2.get_name() && get_membership() == u2.get_membership() ){
